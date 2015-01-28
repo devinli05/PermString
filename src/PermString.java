@@ -11,12 +11,12 @@ public class PermString {
 			return permutations;
 		}
 			
-		char letter = s.charAt(0);
+		char firstLetter = s.charAt(0);
 		String reminder = s.substring(1);
 		ArrayList<String> words = getPerms(reminder);
 		for (String word: words) {
 			for (int j=0; j<=word.length(); j++) {
-				permutations.add(inserCharBefore(word,letter,j));
+				permutations.add(inserCharBefore(word,firstLetter,j));
 			}
 		}
 		
