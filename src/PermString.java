@@ -26,10 +26,10 @@ public class PermString {
 
 	// helper function that inserts a given character into a given string
 	// at the given location index.
-	private static String inserCharBefore(String word, char first, int j) {
+	private static String inserCharBefore(String word, char letter, int j) {
 		String start = word.substring(0, j);
 		String end = word.substring(j);
-		return start + first + end;
+		return start + letter + end;
 	}
 	
 	// the main method
